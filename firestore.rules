@@ -1,0 +1,159 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Default-deny safety net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isValidUserProfile(data) {
+      return data.userId is string && data.userId.size() <= 128 &&
+             data.displayName is string && data.displayName.size() <= 100 &&
+             data.email is string && data.email.size() <= 200 &&
+             (!('photoUrl' in data) || data.photoUrl == null || (data.photoUrl is string && data.photoUrl.size() <= 500)) &&
+             data.totalMastered is int && data.totalMastered >= 0 &&
+             (!('totalPresentations' in data) || (data.totalPresentations is int && data.totalPresentations >= 0)) &&
+             (!('accuracy' in data) || data.accuracy is number) &&
+             (!('quizzesPassed' in data) || (data.quizzesPassed is int && data.quizzesPassed >= 0)) &&
+             data.optInLeaderboard is bool &&
+             data.createdAt is timestamp && data.createdAt <= request.time &&
+             (!('updatedAt' in data) || (data.updatedAt is timestamp && data.updatedAt <= request.time));
+    }
+
+    function isValidCardProgress(data) {
+      return data.cardId is string && data.cardId.size() <= 128 &&
+             data.deckId is string && data.deckId.size() <= 64 &&
+             data.groupId is string && data.groupId.size() <= 64 &&
+             data.isMastered is bool &&
+             data.timesPracticed is int && data.timesPracticed >= 0 &&
+             (!('timesKnow' in data) || (data.timesKnow is int && data.timesKnow >= 0)) &&
+             (!('timesDontKnow' in data) || (data.timesDontKnow is int && data.timesDontKnow >= 0)) &&
+             data.isBookmarked is bool &&
+             (!('lastPracticed' in data) || data.lastPracticed == null || (data.lastPracticed is timestamp && data.lastPracticed <= request.time)) &&
+             (!('updatedAt' in data) || (data.updatedAt is timestamp && data.updatedAt <= request.time));
+    }
+
+    function isValidGroupProgress(data) {
+      return data.groupId is string && data.groupId.size() <= 64 &&
+             data.deckId is string && data.deckId.size() <= 64 &&
+             data.masteredCount is int && data.masteredCount >= 0 &&
+             data.totalCount is int && data.totalCount > 0 &&
+             data.masteredCount <= data.totalCount &&
+             data.isGroupMastered is bool &&
+             data.isUnlocked is bool &&
+             data.quizPassed is bool &&
+             (!('quizBestScore' in data) || (data.quizBestScore is int && data.quizBestScore >= 0 && data.quizBestScore <= 10)) &&
+             (!('quizAttempts' in data) || (data.quizAttempts is int && data.quizAttempts >= 0)) &&
+             (!('lastPracticed' in data) || data.lastPracticed == null || (data.lastPracticed is timestamp && data.lastPracticed <= request.time)) &&
+             (!('updatedAt' in data) || (data.updatedAt is timestamp && data.updatedAt <= request.time));
+    }
+
+    function isValidQuizAttempt(data) {
+      return data.attemptId is string && data.attemptId.size() <= 128 &&
+             data.groupId is string && data.groupId.size() <= 64 &&
+             data.deckId is string && data.deckId.size() <= 64 &&
+             data.score is int && data.score >= 0 && data.score <= 10 &&
+             data.totalQuestions is int && data.totalQuestions == 10 &&
+             data.passed is bool &&
+             data.createdAt is timestamp && data.createdAt <= request.time;
+    }
+
+    function isValidLeaderboardEntry(data) {
+      return data.userId is string && data.userId.size() <= 128 &&
+             data.displayName is string && data.displayName.size() <= 100 &&
+             data.totalMastered is int && data.totalMastered >= 0 &&
+             data.completedGroups is int && data.completedGroups >= 0 &&
+             data.quizzesPassed is int && data.quizzesPassed >= 0 &&
+             (!('updatedAt' in data) || (data.updatedAt is timestamp && data.updatedAt <= request.time));
+    }
+
+    match /users/{userId} {
+      allow get: if isSignedIn() && request.auth.uid == userId;
+
+      allow create: if isSignedIn() &&
+                       request.auth.uid == userId &&
+                       incoming().userId == request.auth.uid &&
+                       isValidUserProfile(incoming());
+
+      allow update: if isSignedIn() &&
+                       request.auth.uid == userId &&
+                       incoming().userId == existing().userId &&
+                       incoming().createdAt == existing().createdAt &&
+                       isValidUserProfile(incoming());
+
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+
+      match /progress/{cardId} {
+        allow get, list: if isSignedIn() && request.auth.uid == userId;
+
+        allow create: if isSignedIn() &&
+                         request.auth.uid == userId &&
+                         isValidCardProgress(incoming());
+
+        allow update: if isSignedIn() &&
+                         request.auth.uid == userId &&
+                         incoming().cardId == existing().cardId &&
+                         isValidCardProgress(incoming());
+
+        allow delete: if isSignedIn() && request.auth.uid == userId;
+      }
+
+      match /group_progress/{groupId} {
+        allow get, list: if isSignedIn() && request.auth.uid == userId;
+
+        allow create: if isSignedIn() &&
+                         request.auth.uid == userId &&
+                         isValidGroupProgress(incoming());
+
+        allow update: if isSignedIn() &&
+                         request.auth.uid == userId &&
+                         incoming().groupId == existing().groupId &&
+                         isValidGroupProgress(incoming());
+
+        allow delete: if isSignedIn() && request.auth.uid == userId;
+      }
+
+      match /quiz_attempts/{attemptId} {
+        allow get, list: if isSignedIn() && request.auth.uid == userId;
+
+        allow create: if isSignedIn() &&
+                         request.auth.uid == userId &&
+                         isValidQuizAttempt(incoming());
+
+        allow delete: if isSignedIn() && request.auth.uid == userId;
+      }
+    }
+
+    match /leaderboard/{userId} {
+      allow get, list: if isSignedIn();
+
+      allow create: if isSignedIn() &&
+                       request.auth.uid == userId &&
+                       incoming().userId == request.auth.uid &&
+                       isValidLeaderboardEntry(incoming());
+
+      allow update: if isSignedIn() &&
+                       request.auth.uid == userId &&
+                       incoming().userId == existing().userId &&
+                       isValidLeaderboardEntry(incoming());
+
+      allow delete: if isSignedIn() && request.auth.uid == userId;
+    }
+  }
+}

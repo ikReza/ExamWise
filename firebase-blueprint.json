@@ -1,0 +1,111 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User account profile and overall learning statistics",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Unique user account ID" },
+        "displayName": { "type": "string", "description": "User display name for leaderboard" },
+        "email": { "type": "string", "description": "User email address" },
+        "photoUrl": { "type": "string", "description": "Optional profile avatar URL" },
+        "totalMastered": { "type": "integer", "description": "Total unique entries mastered" },
+        "totalPresentations": { "type": "integer", "description": "Total flashcard presentations" },
+        "accuracy": { "type": "number", "description": "Overall accuracy percentage" },
+        "quizzesPassed": { "type": "integer", "description": "Number of group completion quizzes passed" },
+        "optInLeaderboard": { "type": "boolean", "description": "Whether user opts in to public rankings" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "displayName", "email", "totalMastered", "optInLeaderboard", "createdAt"]
+    },
+    "CardProgress": {
+      "title": "CardProgress",
+      "description": "Individual flashcard repetition state and mastery record",
+      "type": "object",
+      "properties": {
+        "cardId": { "type": "string", "description": "Stable unique ID of the study entry" },
+        "deckId": { "type": "string", "description": "Deck identifier" },
+        "groupId": { "type": "string", "description": "Group identifier" },
+        "isMastered": { "type": "boolean", "description": "True if entry has been marked Know" },
+        "timesPracticed": { "type": "integer", "description": "Total presentations of this card" },
+        "timesKnow": { "type": "integer", "description": "Number of Know answers" },
+        "timesDontKnow": { "type": "integer", "description": "Number of Don't Know answers" },
+        "isBookmarked": { "type": "boolean", "description": "True if marked as favourite/bookmarked" },
+        "lastPracticed": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["cardId", "deckId", "groupId", "isMastered", "timesPracticed", "isBookmarked"]
+    },
+    "GroupProgress": {
+      "title": "GroupProgress",
+      "description": "Mastery and unlock status of a 50-card group",
+      "type": "object",
+      "properties": {
+        "groupId": { "type": "string", "description": "Unique group identifier" },
+        "deckId": { "type": "string", "description": "Parent deck identifier" },
+        "masteredCount": { "type": "integer", "description": "Count of unique cards mastered in this group" },
+        "totalCount": { "type": "integer", "description": "Total cards in group (50 or remainder)" },
+        "isGroupMastered": { "type": "boolean", "description": "True if masteredCount == totalCount" },
+        "isUnlocked": { "type": "boolean", "description": "True if unlocked (first group or prev quiz passed)" },
+        "quizPassed": { "type": "boolean", "description": "True if 10-mark quiz passed with >= 7" },
+        "quizBestScore": { "type": "integer", "description": "Best score achieved (0-10)" },
+        "quizAttempts": { "type": "integer", "description": "Total attempts taken on quiz" },
+        "lastPracticed": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["groupId", "deckId", "masteredCount", "totalCount", "isGroupMastered", "isUnlocked", "quizPassed"]
+    },
+    "QuizAttempt": {
+      "title": "QuizAttempt",
+      "description": "Record of a 10-question completion quiz attempt",
+      "type": "object",
+      "properties": {
+        "attemptId": { "type": "string", "description": "Unique attempt identifier" },
+        "groupId": { "type": "string", "description": "Group identifier" },
+        "deckId": { "type": "string", "description": "Deck identifier" },
+        "score": { "type": "integer", "description": "Score achieved (out of 10)" },
+        "totalQuestions": { "type": "integer", "description": "Number of questions (10)" },
+        "passed": { "type": "boolean", "description": "True if score >= 7" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["attemptId", "groupId", "deckId", "score", "totalQuestions", "passed", "createdAt"]
+    },
+    "LeaderboardEntry": {
+      "title": "LeaderboardEntry",
+      "description": "Public ranking record showing unique mastered entries",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "User identifier" },
+        "displayName": { "type": "string", "description": "User display name" },
+        "totalMastered": { "type": "integer", "description": "Total unique entries mastered" },
+        "completedGroups": { "type": "integer", "description": "Total completed groups" },
+        "quizzesPassed": { "type": "integer", "description": "Total quizzes passed" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "displayName", "totalMastered", "completedGroups", "quizzesPassed"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/UserProfile" },
+      "description": "User account document containing learning totals"
+    },
+    "/users/{userId}/progress/{cardId}": {
+      "schema": { "$ref": "#/entities/CardProgress" },
+      "description": "Individual card repetition and mastery record"
+    },
+    "/users/{userId}/group_progress/{groupId}": {
+      "schema": { "$ref": "#/entities/GroupProgress" },
+      "description": "Group unlock, mastery, and quiz status"
+    },
+    "/users/{userId}/quiz_attempts/{attemptId}": {
+      "schema": { "$ref": "#/entities/QuizAttempt" },
+      "description": "Historical quiz attempts for audit and progress"
+    },
+    "/leaderboard/{userId}": {
+      "schema": { "$ref": "#/entities/LeaderboardEntry" },
+      "description": "Public opt-in leaderboard entry"
+    }
+  }
+}

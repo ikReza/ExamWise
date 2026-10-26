@@ -1,0 +1,6 @@
+{
+  "name": "ExamWise",
+  "description": "Offline-first bilingual exam preparation app for Bangla and English with flashcards, mastery repetition, quizzes, and sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

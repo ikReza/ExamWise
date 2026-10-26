@@ -1,0 +1,927 @@
+{
+  "decks": [
+    {
+      "deckId": "b_ant",
+      "subjectId": "bangla",
+      "subjectTitle": "Bangla Language & Literature",
+      "deckTitle": "বিপরীত শব্দ (Antonyms)",
+      "type": "antonym",
+      "totalCards": 1207,
+      "totalGroups": 25
+    },
+    {
+      "deckId": "b_prv",
+      "subjectId": "bangla",
+      "subjectTitle": "Bangla Language & Literature",
+      "deckTitle": "বাগধারা ও প্রবাদ (Idioms & Proverbs)",
+      "type": "proverb",
+      "totalCards": 1190,
+      "totalGroups": 24
+    },
+    {
+      "deckId": "b_sub",
+      "subjectId": "bangla",
+      "subjectTitle": "Bangla Language & Literature",
+      "deckTitle": "এক কথায় প্রকাশ (One Word Substitution)",
+      "type": "one_word",
+      "totalCards": 694,
+      "totalGroups": 14
+    },
+    {
+      "deckId": "b_syn",
+      "subjectId": "bangla",
+      "subjectTitle": "Bangla Language & Literature",
+      "deckTitle": "সমার্থক শব্দ (Synonyms)",
+      "type": "synonym",
+      "totalCards": 542,
+      "totalGroups": 11
+    },
+    {
+      "deckId": "e_voc_b",
+      "subjectId": "english",
+      "subjectTitle": "English Language & Grammar",
+      "deckTitle": "Vocabulary (Bangla Meaning)",
+      "type": "vocab_bangla",
+      "totalCards": 777,
+      "totalGroups": 16
+    },
+    {
+      "deckId": "e_voc_s",
+      "subjectId": "english",
+      "subjectTitle": "English Language & Grammar",
+      "deckTitle": "Vocabulary (English Synonyms)",
+      "type": "vocab_synonym",
+      "totalCards": 777,
+      "totalGroups": 16
+    },
+    {
+      "deckId": "e_idm",
+      "subjectId": "english",
+      "subjectTitle": "English Language & Grammar",
+      "deckTitle": "Phrases & Idioms",
+      "type": "idiom",
+      "totalCards": 225,
+      "totalGroups": 5
+    },
+    {
+      "deckId": "e_sub",
+      "subjectId": "english",
+      "subjectTitle": "English Language & Grammar",
+      "deckTitle": "One Word Substitution",
+      "type": "one_word_en",
+      "totalCards": 190,
+      "totalGroups": 4
+    },
+    {
+      "deckId": "e_adm",
+      "subjectId": "english",
+      "subjectTitle": "English Language & Grammar",
+      "deckTitle": "Administrative & Exam Terms (পারিভাষিক)",
+      "type": "paribhasha",
+      "totalCards": 214,
+      "totalGroups": 5
+    }
+  ],
+  "groups": [
+    {
+      "groupId": "b_ant_g1",
+      "deckId": "b_ant",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g2",
+      "deckId": "b_ant",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g3",
+      "deckId": "b_ant",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g4",
+      "deckId": "b_ant",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g5",
+      "deckId": "b_ant",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g6",
+      "deckId": "b_ant",
+      "groupIndex": 6,
+      "groupTitle": "Group 6 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g7",
+      "deckId": "b_ant",
+      "groupIndex": 7,
+      "groupTitle": "Group 7 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g8",
+      "deckId": "b_ant",
+      "groupIndex": 8,
+      "groupTitle": "Group 8 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g9",
+      "deckId": "b_ant",
+      "groupIndex": 9,
+      "groupTitle": "Group 9 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g10",
+      "deckId": "b_ant",
+      "groupIndex": 10,
+      "groupTitle": "Group 10 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g11",
+      "deckId": "b_ant",
+      "groupIndex": 11,
+      "groupTitle": "Group 11 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g12",
+      "deckId": "b_ant",
+      "groupIndex": 12,
+      "groupTitle": "Group 12 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g13",
+      "deckId": "b_ant",
+      "groupIndex": 13,
+      "groupTitle": "Group 13 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g14",
+      "deckId": "b_ant",
+      "groupIndex": 14,
+      "groupTitle": "Group 14 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g15",
+      "deckId": "b_ant",
+      "groupIndex": 15,
+      "groupTitle": "Group 15 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g16",
+      "deckId": "b_ant",
+      "groupIndex": 16,
+      "groupTitle": "Group 16 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g17",
+      "deckId": "b_ant",
+      "groupIndex": 17,
+      "groupTitle": "Group 17 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g18",
+      "deckId": "b_ant",
+      "groupIndex": 18,
+      "groupTitle": "Group 18 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g19",
+      "deckId": "b_ant",
+      "groupIndex": 19,
+      "groupTitle": "Group 19 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g20",
+      "deckId": "b_ant",
+      "groupIndex": 20,
+      "groupTitle": "Group 20 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g21",
+      "deckId": "b_ant",
+      "groupIndex": 21,
+      "groupTitle": "Group 21 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g22",
+      "deckId": "b_ant",
+      "groupIndex": 22,
+      "groupTitle": "Group 22 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g23",
+      "deckId": "b_ant",
+      "groupIndex": 23,
+      "groupTitle": "Group 23 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g24",
+      "deckId": "b_ant",
+      "groupIndex": 24,
+      "groupTitle": "Group 24 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_ant_g25",
+      "deckId": "b_ant",
+      "groupIndex": 25,
+      "groupTitle": "Group 25 (7 entries)",
+      "totalCards": 7
+    },
+    {
+      "groupId": "b_prv_g1",
+      "deckId": "b_prv",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g2",
+      "deckId": "b_prv",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g3",
+      "deckId": "b_prv",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g4",
+      "deckId": "b_prv",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g5",
+      "deckId": "b_prv",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g6",
+      "deckId": "b_prv",
+      "groupIndex": 6,
+      "groupTitle": "Group 6 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g7",
+      "deckId": "b_prv",
+      "groupIndex": 7,
+      "groupTitle": "Group 7 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g8",
+      "deckId": "b_prv",
+      "groupIndex": 8,
+      "groupTitle": "Group 8 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g9",
+      "deckId": "b_prv",
+      "groupIndex": 9,
+      "groupTitle": "Group 9 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g10",
+      "deckId": "b_prv",
+      "groupIndex": 10,
+      "groupTitle": "Group 10 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g11",
+      "deckId": "b_prv",
+      "groupIndex": 11,
+      "groupTitle": "Group 11 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g12",
+      "deckId": "b_prv",
+      "groupIndex": 12,
+      "groupTitle": "Group 12 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g13",
+      "deckId": "b_prv",
+      "groupIndex": 13,
+      "groupTitle": "Group 13 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g14",
+      "deckId": "b_prv",
+      "groupIndex": 14,
+      "groupTitle": "Group 14 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g15",
+      "deckId": "b_prv",
+      "groupIndex": 15,
+      "groupTitle": "Group 15 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g16",
+      "deckId": "b_prv",
+      "groupIndex": 16,
+      "groupTitle": "Group 16 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g17",
+      "deckId": "b_prv",
+      "groupIndex": 17,
+      "groupTitle": "Group 17 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g18",
+      "deckId": "b_prv",
+      "groupIndex": 18,
+      "groupTitle": "Group 18 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g19",
+      "deckId": "b_prv",
+      "groupIndex": 19,
+      "groupTitle": "Group 19 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g20",
+      "deckId": "b_prv",
+      "groupIndex": 20,
+      "groupTitle": "Group 20 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g21",
+      "deckId": "b_prv",
+      "groupIndex": 21,
+      "groupTitle": "Group 21 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g22",
+      "deckId": "b_prv",
+      "groupIndex": 22,
+      "groupTitle": "Group 22 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g23",
+      "deckId": "b_prv",
+      "groupIndex": 23,
+      "groupTitle": "Group 23 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_prv_g24",
+      "deckId": "b_prv",
+      "groupIndex": 24,
+      "groupTitle": "Group 24 (40 entries)",
+      "totalCards": 40
+    },
+    {
+      "groupId": "b_sub_g1",
+      "deckId": "b_sub",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g2",
+      "deckId": "b_sub",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g3",
+      "deckId": "b_sub",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g4",
+      "deckId": "b_sub",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g5",
+      "deckId": "b_sub",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g6",
+      "deckId": "b_sub",
+      "groupIndex": 6,
+      "groupTitle": "Group 6 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g7",
+      "deckId": "b_sub",
+      "groupIndex": 7,
+      "groupTitle": "Group 7 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g8",
+      "deckId": "b_sub",
+      "groupIndex": 8,
+      "groupTitle": "Group 8 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g9",
+      "deckId": "b_sub",
+      "groupIndex": 9,
+      "groupTitle": "Group 9 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g10",
+      "deckId": "b_sub",
+      "groupIndex": 10,
+      "groupTitle": "Group 10 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g11",
+      "deckId": "b_sub",
+      "groupIndex": 11,
+      "groupTitle": "Group 11 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g12",
+      "deckId": "b_sub",
+      "groupIndex": 12,
+      "groupTitle": "Group 12 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g13",
+      "deckId": "b_sub",
+      "groupIndex": 13,
+      "groupTitle": "Group 13 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_sub_g14",
+      "deckId": "b_sub",
+      "groupIndex": 14,
+      "groupTitle": "Group 14 (44 entries)",
+      "totalCards": 44
+    },
+    {
+      "groupId": "b_syn_g1",
+      "deckId": "b_syn",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g2",
+      "deckId": "b_syn",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g3",
+      "deckId": "b_syn",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g4",
+      "deckId": "b_syn",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g5",
+      "deckId": "b_syn",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g6",
+      "deckId": "b_syn",
+      "groupIndex": 6,
+      "groupTitle": "Group 6 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g7",
+      "deckId": "b_syn",
+      "groupIndex": 7,
+      "groupTitle": "Group 7 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g8",
+      "deckId": "b_syn",
+      "groupIndex": 8,
+      "groupTitle": "Group 8 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g9",
+      "deckId": "b_syn",
+      "groupIndex": 9,
+      "groupTitle": "Group 9 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g10",
+      "deckId": "b_syn",
+      "groupIndex": 10,
+      "groupTitle": "Group 10 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "b_syn_g11",
+      "deckId": "b_syn",
+      "groupIndex": 11,
+      "groupTitle": "Group 11 (42 entries)",
+      "totalCards": 42
+    },
+    {
+      "groupId": "e_voc_b_g1",
+      "deckId": "e_voc_b",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g2",
+      "deckId": "e_voc_b",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g3",
+      "deckId": "e_voc_b",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g4",
+      "deckId": "e_voc_b",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g5",
+      "deckId": "e_voc_b",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g6",
+      "deckId": "e_voc_b",
+      "groupIndex": 6,
+      "groupTitle": "Group 6 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g7",
+      "deckId": "e_voc_b",
+      "groupIndex": 7,
+      "groupTitle": "Group 7 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g8",
+      "deckId": "e_voc_b",
+      "groupIndex": 8,
+      "groupTitle": "Group 8 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g9",
+      "deckId": "e_voc_b",
+      "groupIndex": 9,
+      "groupTitle": "Group 9 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g10",
+      "deckId": "e_voc_b",
+      "groupIndex": 10,
+      "groupTitle": "Group 10 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g11",
+      "deckId": "e_voc_b",
+      "groupIndex": 11,
+      "groupTitle": "Group 11 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g12",
+      "deckId": "e_voc_b",
+      "groupIndex": 12,
+      "groupTitle": "Group 12 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g13",
+      "deckId": "e_voc_b",
+      "groupIndex": 13,
+      "groupTitle": "Group 13 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g14",
+      "deckId": "e_voc_b",
+      "groupIndex": 14,
+      "groupTitle": "Group 14 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g15",
+      "deckId": "e_voc_b",
+      "groupIndex": 15,
+      "groupTitle": "Group 15 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_b_g16",
+      "deckId": "e_voc_b",
+      "groupIndex": 16,
+      "groupTitle": "Group 16 (27 entries)",
+      "totalCards": 27
+    },
+    {
+      "groupId": "e_voc_s_g1",
+      "deckId": "e_voc_s",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g2",
+      "deckId": "e_voc_s",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g3",
+      "deckId": "e_voc_s",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g4",
+      "deckId": "e_voc_s",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g5",
+      "deckId": "e_voc_s",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g6",
+      "deckId": "e_voc_s",
+      "groupIndex": 6,
+      "groupTitle": "Group 6 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g7",
+      "deckId": "e_voc_s",
+      "groupIndex": 7,
+      "groupTitle": "Group 7 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g8",
+      "deckId": "e_voc_s",
+      "groupIndex": 8,
+      "groupTitle": "Group 8 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g9",
+      "deckId": "e_voc_s",
+      "groupIndex": 9,
+      "groupTitle": "Group 9 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g10",
+      "deckId": "e_voc_s",
+      "groupIndex": 10,
+      "groupTitle": "Group 10 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g11",
+      "deckId": "e_voc_s",
+      "groupIndex": 11,
+      "groupTitle": "Group 11 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g12",
+      "deckId": "e_voc_s",
+      "groupIndex": 12,
+      "groupTitle": "Group 12 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g13",
+      "deckId": "e_voc_s",
+      "groupIndex": 13,
+      "groupTitle": "Group 13 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g14",
+      "deckId": "e_voc_s",
+      "groupIndex": 14,
+      "groupTitle": "Group 14 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g15",
+      "deckId": "e_voc_s",
+      "groupIndex": 15,
+      "groupTitle": "Group 15 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_voc_s_g16",
+      "deckId": "e_voc_s",
+      "groupIndex": 16,
+      "groupTitle": "Group 16 (27 entries)",
+      "totalCards": 27
+    },
+    {
+      "groupId": "e_idm_g1",
+      "deckId": "e_idm",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_idm_g2",
+      "deckId": "e_idm",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_idm_g3",
+      "deckId": "e_idm",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_idm_g4",
+      "deckId": "e_idm",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_idm_g5",
+      "deckId": "e_idm",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (25 entries)",
+      "totalCards": 25
+    },
+    {
+      "groupId": "e_sub_g1",
+      "deckId": "e_sub",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_sub_g2",
+      "deckId": "e_sub",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_sub_g3",
+      "deckId": "e_sub",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_sub_g4",
+      "deckId": "e_sub",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (40 entries)",
+      "totalCards": 40
+    },
+    {
+      "groupId": "e_adm_g1",
+      "deckId": "e_adm",
+      "groupIndex": 1,
+      "groupTitle": "Group 1 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_adm_g2",
+      "deckId": "e_adm",
+      "groupIndex": 2,
+      "groupTitle": "Group 2 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_adm_g3",
+      "deckId": "e_adm",
+      "groupIndex": 3,
+      "groupTitle": "Group 3 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_adm_g4",
+      "deckId": "e_adm",
+      "groupIndex": 4,
+      "groupTitle": "Group 4 (50 entries)",
+      "totalCards": 50
+    },
+    {
+      "groupId": "e_adm_g5",
+      "deckId": "e_adm",
+      "groupIndex": 5,
+      "groupTitle": "Group 5 (14 entries)",
+      "totalCards": 14
+    }
+  ]
+}
